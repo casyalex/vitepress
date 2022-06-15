@@ -19,9 +19,15 @@ defineProps<{
         {{ member.name }}
       </h1>
       <p v-if="member.title || member.org" class="affiliation">
-        <span v-if="member.title" class="title">{{ member.title }}</span>
-        <span v-if="member.title && member.org" class="at">at</span>
-        <VPLink v-if="member.org" class="org" :class="{ link: member.orgLink }" :href="member.orgLink" no-icon>{{ member.org }}</VPLink>
+        <span v-if="member.title" class="title">
+          {{ member.title }}
+        </span>
+        <span v-if="member.title && member.org" class="at">
+          @
+        </span>
+        <VPLink v-if="member.org" class="org" :class="{ link: member.orgLink }" :href="member.orgLink" no-icon>
+          {{ member.org }}
+        </VPLink>
       </p>
       <p v-if="member.desc" class="desc">
         {{ member.desc }}
