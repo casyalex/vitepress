@@ -170,6 +170,19 @@ export namespace DefaultTheme {
     copyright?: string
   }
 
+  // team ----------------------------------------------------------------------
+
+  export interface TeamMember {
+    avatar: string
+    name: string
+    title?: string
+    org?: string
+    orgLink?: string
+    desc?: string
+    links?: SocialLink[]
+    sponsor?: string
+  }
+
   // locales -------------------------------------------------------------------
 
   export interface LocaleLinks {
