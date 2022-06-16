@@ -15,6 +15,26 @@
   }
 }
 
+:slotted(.VPTeamPageSection + .VPTeamPageSection),
+:slotted(.VPTeamMembers + .VPTeamPageSection) {
+  margin-top: 64px;
+}
+
+:slotted(.VPTeamMembers + .VPTeamMembers) {
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  :slotted(.VPTeamPageTitle + .VPTeamPageSection) {
+    margin-top: 16px;
+  }
+
+  :slotted(.VPTeamPageSection + .VPTeamPageSection),
+  :slotted(.VPTeamMembers + .VPTeamPageSection) {
+    margin-top: 96px;
+  }
+}
+
 :slotted(.VPTeamMembers) {
   padding: 0 24px;
 }

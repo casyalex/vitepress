@@ -21,6 +21,12 @@
   }
 }
 
+@media (min-width: 960px) {
+  .VPTeamPageTitle {
+    padding: 80px 64px 48px;
+  }
+}
+
 .title {
   letter-spacing: 0;
   line-height: 44px;
