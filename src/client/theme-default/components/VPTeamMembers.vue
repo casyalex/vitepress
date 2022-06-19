@@ -37,14 +37,14 @@ const classes = computed(() => [
   grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
 }
 
-.VPTeamMembers.medium.count-1 .container { max-width: 368px; }
-.VPTeamMembers.medium.count-2 .container { max-width: calc(368px * 2 + 24px); }
-
 @media (min-width: 375px) {
   .VPTeamMembers.medium .container {
     grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
   }
 }
+
+.VPTeamMembers.medium.count-1 .container { max-width: 368px; }
+.VPTeamMembers.medium.count-2 .container { max-width: calc(368px * 2 + 24px); }
 
 .container {
   display: grid;

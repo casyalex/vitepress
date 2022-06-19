@@ -157,15 +157,18 @@ defineProps<{
 }
 
 .name {
+  margin:  0;
   font-weight: 600;
 }
 
 .affiliation {
+  margin:  0;
   font-weight: 500;
   color: var(--vp-c-text-2);
 }
 
 .org.link {
+  color: var(--vp-c-text-2);
   transition: color 0.25s;
 }
 
